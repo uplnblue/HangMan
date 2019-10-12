@@ -9,6 +9,16 @@ class HangMan():
                 'easy' :  ['Beat', 'Guitar', 'Drums', 'Chord', 'Note'],
                 'normal': ['Chorus', 'Verse', 'Soprano', 'Tenor', 'Violin'],
                 'hard' : ['Allegro', 'Adagio', 'Bass', 'Alto', 'Accompaniment']
+            },
+            'animals': {
+                'easy': ['horse', 'wolf', 'dog', 'cat', 'fish'],
+                'normal': ['giraffe', 'monkey', 'otter', 'elephant', 'dolphin'],
+                'hard': ['human', 'rhinocerous', 'python', 'falcon', 'herring']
+            },
+            'sports': {
+                'easy': ['baseball', 'soccer', 'football', 'basketball'],
+                'normal': ['basketball', 'crew', 'track', 'hockey'],
+                'hard': ['curling', 'wrestling', 'karate', 'golf']
             }
         }
         m = ''
@@ -18,7 +28,7 @@ class HangMan():
 
         c = ''
         while not c in self.categories.keys():
-            c = input('music or music?:').strip().lower()
+            c = input('music, aniamls, or sports?:').strip().lower()
         self.category = c
 
         self.alphabet = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
